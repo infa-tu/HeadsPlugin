@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37301.10 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HeadsPlugin", "HeadsPlugin.vcxproj", "{6F0AD180-76D5-1EFF-D28D-F7E0D73905DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6F0AD180-76D5-1EFF-D28D-F7E0D73905DC}.Debug|x64.ActiveCfg = Debug|x64
+		{6F0AD180-76D5-1EFF-D28D-F7E0D73905DC}.Debug|x64.Build.0 = Debug|x64
+		{6F0AD180-76D5-1EFF-D28D-F7E0D73905DC}.Debug|x86.ActiveCfg = Debug|Win32
+		{6F0AD180-76D5-1EFF-D28D-F7E0D73905DC}.Debug|x86.Build.0 = Debug|Win32
+		{6F0AD180-76D5-1EFF-D28D-F7E0D73905DC}.Release|x64.ActiveCfg = Release|x64
+		{6F0AD180-76D5-1EFF-D28D-F7E0D73905DC}.Release|x64.Build.0 = Release|x64
+		{6F0AD180-76D5-1EFF-D28D-F7E0D73905DC}.Release|x86.ActiveCfg = Release|Win32
+		{6F0AD180-76D5-1EFF-D28D-F7E0D73905DC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CBEAB7F-1973-4FBC-8550-42ECA99E1E3A}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,18 @@
+# Visual Studio 编译输出目录
+bin/
+obj/
+x64/
+
+# 插件本体（编译产物）
+*.arx
+*.dll
+
+# Visual Studio 缓存
+.vs/
+
+# 用户配置
+*.user
+*.suo
+
+# 系统文件
+Thumbs.db

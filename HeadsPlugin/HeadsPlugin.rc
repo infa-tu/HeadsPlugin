@@ -1,0 +1,191 @@
+//Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+	"\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904B0"
+		BEGIN
+			VALUE "CompanyName", "\0"
+			VALUE "FileDescription", "HeadsPlugin ObjectARX application\0"
+			VALUE "FileVersion", "1, 0, 0, 1\0"
+			VALUE "InternalName", "HeadsPlugin\0"
+			VALUE "LegalCopyright", "Copyright ?2002\0"
+			VALUE "OriginalFilename", "asdkHeadsPlugin.arx\0"
+			VALUE "ProductName", "HeadsPlugin Application\0"
+			VALUE "ProductVersion", "1, 0, 0, 1\0"
+		END
+	END
+	BLOCK "VarFileInfo"
+	BEGIN
+		VALUE "Translation", 0x0409, 0x04B0
+    END
+END
+
+#endif    // !_MAC
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+	IDS_PROJNAME					"HeadsPlugin"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dished head parameters input dialog
+//
+
+IDD_DISHED_HEAD_DLG DIALOGEX 0, 0, 240, 170
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dished Head Parameters"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Inner diameter Di:",IDC_STATIC,12,16,90,10
+    EDITTEXT        IDC_EDIT_DI,110,14,90,14,ES_AUTOHSCROLL
+    LTEXT           "Crown radius Ri:",IDC_STATIC,12,36,90,10
+    EDITTEXT        IDC_EDIT_RI,110,34,90,14,ES_AUTOHSCROLL
+    LTEXT           "Knuckle radius ri:",IDC_STATIC,12,56,90,10
+    EDITTEXT        IDC_EDIT_RI_TRANS,110,54,90,14,ES_AUTOHSCROLL
+    LTEXT           "Thickness T:",IDC_STATIC,12,76,90,10
+    EDITTEXT        IDC_EDIT_T,110,74,90,14,ES_AUTOHSCROLL
+    LTEXT           "Straight flange L:",IDC_STATIC,12,96,90,10
+    EDITTEXT        IDC_EDIT_L,110,94,90,14,ES_AUTOHSCROLL
+    CONTROL         "Auto-adjust to tangent",IDC_CHECK_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,118,120,12
+    DEFPUSHBUTTON   "OK",IDOK,130,144,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,190,144,50,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Elliptical head parameters input dialog
+//
+
+IDD_ELLIPTICAL_HEAD_DLG DIALOGEX 0, 0, 240, 120
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Elliptical Head Parameters"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Inner diameter Di:",IDC_STATIC,12,16,90,10
+    EDITTEXT        IDC_EDIT_E_DI,110,14,90,14,ES_AUTOHSCROLL
+    LTEXT           "Thickness T:",IDC_STATIC,12,40,90,10
+    EDITTEXT        IDC_EDIT_E_T,110,38,90,14,ES_AUTOHSCROLL
+    LTEXT           "Straight flange L:",IDC_STATIC,12,64,90,10
+    EDITTEXT        IDC_EDIT_E_L,110,62,90,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,130,95,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,190,95,50,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Head type selection dialog
+//
+
+IDD_HEAD_TYPE_DLG DIALOGEX 0, 0, 240, 90
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Head Type"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Head type:",IDC_STATIC,12,18,60,10
+    COMBOBOX        IDC_COMBO_TYPE,80,16,140,80,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,130,60,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,190,60,50,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cone parameters input dialog
+//
+
+IDD_CONE_DLG DIALOGEX 0, 0, 270, 200
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Cone Parameters"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Di (large end inner dia):",IDC_STATIC,12,12,110,10
+    EDITTEXT        IDC_EDIT_C_DI,130,10,120,14,ES_AUTOHSCROLL
+    LTEXT           "Dis (small end inner dia):",IDC_STATIC,12,30,110,10
+    EDITTEXT        IDC_EDIT_C_DIS,130,28,120,14,ES_AUTOHSCROLL
+    LTEXT           "alpha (deg):",IDC_STATIC,12,48,110,10
+    EDITTEXT        IDC_EDIT_C_ALPHA,130,46,120,14,ES_AUTOHSCROLL
+    LTEXT           "dn (thickness):",IDC_STATIC,12,66,110,10
+    EDITTEXT        IDC_EDIT_C_DN,130,64,120,14,ES_AUTOHSCROLL
+    LTEXT           "hs (bottom flange):",IDC_STATIC,12,84,110,10
+    EDITTEXT        IDC_EDIT_C_HS,130,82,120,14,ES_AUTOHSCROLL
+    LTEXT           "h (top flange):",IDC_STATIC,12,102,110,10
+    EDITTEXT        IDC_EDIT_C_H,130,100,120,14,ES_AUTOHSCROLL
+    LTEXT           "ri (top inner radius):",IDC_STATIC,12,120,110,10
+    EDITTEXT        IDC_EDIT_C_RI,130,118,120,14,ES_AUTOHSCROLL
+    LTEXT           "rs (bottom inner radius):",IDC_STATIC,12,138,110,10
+    EDITTEXT        IDC_EDIT_C_RS,130,136,120,14,ES_AUTOHSCROLL
+    CONTROL         "Auto-adjust",IDC_CHECK_C_AUTO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,158,90,12
+    DEFPUSHBUTTON   "OK",IDOK,160,176,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,210,176,50,14
+END
+
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
